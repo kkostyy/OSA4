@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 
 namespace Failitootlus
@@ -17,6 +17,7 @@ namespace Failitootlus
                 Console.WriteLine("3. Koostisosade muutmine (List + ReadAllLines)");
                 Console.WriteLine("4. Külmkapi kontroll (Contains)");
                 Console.WriteLine("5. Salvestamine tagasi faili (WriteAllLines)");
+                Console.WriteLine("6. Itaalia restorani menüü (Tuple + Split)");
                 Console.WriteLine("0. exit");
 
                 string valik = Console.ReadLine();
@@ -41,6 +42,10 @@ namespace Failitootlus
                 {
                     Funktsioonid.UuendatudSalvestamine();
                 }
+                else if (valik == "6")
+                {
+                    Funktsioonid.RestoranMenüü();
+                }
                 else if (valik == "0")
                 {
                     Console.WriteLine("Nägemist!");
@@ -48,7 +53,7 @@ namespace Failitootlus
                 }
                 else
                 {
-                    Console.WriteLine("Palun vali 0-5");
+                    Console.WriteLine("Palun vali 0-6");
                 }
             }
         }
